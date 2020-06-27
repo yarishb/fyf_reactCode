@@ -1,0 +1,198 @@
+$black: black;
+$white: #fff;
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+.modal{
+    margin-top: 5rem;
+    text-align: center;
+    background-color: rgba($color: $black, $alpha: 0.5);
+    border: 2px solid black;
+    color: rgba(0, 0, 0, .7);
+    position: fixed;
+    height: 25.5rem;
+    width: 20rem;
+    z-index: 2;
+}
+
+.loginModal{
+  height: 20rem;
+}
+
+.modalCenter{
+    display: flex;
+    justify-content: center;
+}
+
+.modalFull{
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+
+.headerModal{
+    padding-top: 1rem;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: rgba($color: $white, $alpha: 0.9);
+}
+
+.form__group {
+    font-family: 'Poppins', sans-serif; 
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 5px;
+  margin-left: 1rem;
+  color: rgba($color: #fff, $alpha: 0.7);
+  width: 80%;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  color: rgba($color: #fff, $alpha: 0.8);
+  border-bottom: 2px solid $gray;
+  outline: 0;
+  font-size: 1.3rem;
+  padding: 2px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $primary;
+    font-weight:700;    
+  }
+  padding-bottom: 6px;  
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, $primary,$secondary);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field{
+  &:required,&:invalid { box-shadow:none; }
+}
+
+.logos{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  padding-top: 0.3rem;
+}
+.google{
+  transition: .1s;
+  margin-right: 1rem;
+  padding: 7px 10px 6px 10px;
+  background-color: rgba($color: grey, $alpha: 0.3);
+  border-radius: 100%;
+}
+.google:hover{
+  transition: .1s;
+  background-color: rgba($color: #fff, $alpha:0.9);
+}
+.googleImg{
+  width: 30px;
+  height: 30px;
+}
+.regButton{
+    transition: .2s;
+    background-color: yellow;
+    display: flex;
+    margin-top: 2.1rem;
+    margin-left: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    justify-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgba($color: $black, $alpha: 0.9);
+    width: 17.5rem;
+    border: none;
+    outline:none;
+}
+.regButton:hover{
+  transition: .2s;
+  background-color: #fff;
+  border: none;
+  outline:none;
+}
+.login{
+    margin-top:3rem;
+}
+.link{
+  text-decoration: none;
+}
+.question{
+    color: rgba($color: $white, $alpha: 0.8);
+    position: absolute;
+    margin-top: 4rem;
+    font-size: 14px;
+    padding-left: 1.2rem;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.questionText{
+  color: rgba($color: white, $alpha: 0.5);
+}
+.log{
+    padding-top: 3rem;
+}
+.reg{
+    font-size: 14px;
+    margin-top: 5rem;
+}
+
+.blockSignWithOtherCompany{
+  display: inline;
+  position: relative;
+}
+
+@media screen and(max-width: "700px"){
+  .modal{
+    margin-top: 1rem;
+    height: 25rem;
+    width: 19rem;
+}
+.reg{
+  font-size: 13px;
+}
+.regButton{
+  margin-left: 0.7rem;
+}
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+.timerFullPage{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/originals/2e/0c/73/2e0c73a5f92c075e6a03dc5890f4274a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    filter: grayscale(7);
+    top: 0;
+    left: 0;
+}
+
+.rightSide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    z-index: -3;
+    
+}
+
+.timerHeader{
+    color: rgba($color: #fff, $alpha: 1.0);
+    font-family: 'Mukta',sans-serif;
+    z-index: 1000;
+    font-size: 90px;
+    margin-left: 6rem;
+}
+
+.timerSubtitle{
+    position: absolute;
+    top: 5rem;
+    color: rgba($color: #fff, $alpha: 1.0);
+    font-family: 'Mukta',sans-serif;
+    z-index: 2;
+    font-size: 50px;
+}
+
+.decoration::before{
+    content: "";
+    width: 50%;
+    left: -20rem;
+    transform: skewX(40deg);
+    background-color: rgba($color: red, $alpha: 0.7);
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+.buttonTimer{
+    transition: .2s;
+    display: flex;
+    justify-content: center;
+    width: 10rem;
+    margin-right: 5rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-family: 'Mukta',sans-serif;
+    background-color: rgba($color: #fff, $alpha: 0.90);
+    border: 1px solid #fff;
+}
+
+.buttonTimer:hover{
+    transition: .2s;
+    background-color: #fff;
+    box-shadow: 0 5px 35px rgba($color: #fff, $alpha: 0.7);
+}
+
+.buttonsTimer{
+    margin-left: 6rem;
+    position: absolute;
+    top: 18rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.timer{
+    transition: .4s;
+    padding: 4rem 3.5rem 10rem 3.5rem;
+    background-color: rgba($color: red, $alpha: 0.7);
+    border-radius: 1rem;
+    margin-top: 5rem;
+    position: absolute;
+    right: 15rem;
+    font-size: 200px;
+    color: #fff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.timerStart{
+    transition: .4s;
+    padding: 20px 10px 20px 10px;
+    position: absolute;
+    bottom: 1rem;
+    background-color: rgba($color: #000, $alpha: 0.80);
+    border-radius: 100%;
+    font-size: 25px;
+}
+.timerStart:hover{
+    transition: .4s;
+    box-shadow: 0 2px 15px rgba($color: #000, $alpha: 0.7);
+}
+.timerUp{
+    top: 0;
+    font-size: 150px;
+    z-index: -1;
+    position: absolute;
+}
+
+
+.timerDown{
+    top: 12rem;
+    font-size: 150px;
+    z-index: -1;
+    position: absolute;
+}
+
+.timeAddBlock{
+    display: inline-block;
+    padding-top: 5rem;
+}
+
+.addTime{
+    border: 0;
+    text-decoration: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    left: 0;
+    margin-left: 1rem;
+    position: absolute;
+    font-size: 40px;
+}
+
+.less{
+    padding-left: 0.7rem;
+    margin-top: 3rem;
+}
+
+@media screen and(max-width: "700px"){
+    .timerFullPage{
+        display: flex;
+        justify-content: center;
+    }
+    .timerHeader{
+        display: none;
+    }
+    
+    .timerSubtitle{
+       display: none;
+    }
+    .timer{
+        transition: .4s;
+        padding: 4rem 3.5rem 10rem 3.5rem;
+        background-color: rgba($color: red, $alpha: 0.7);
+        border-radius: 1rem;
+        margin-top: 5rem;
+        position: absolute;
+        right: 1rem;
+        font-size: 200px;
+        color: #fff;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+    }
+    .buttonTimer{
+        width: 7rem; 
+        margin-right: 1rem;
+        font-size: 13px;
+    }
+    .buttonsTimer{
+        position: absolute;
+        top: 2rem;
+        margin-left: 1.8rem;
+    }
+    
+    
+    .timer{
+        padding: 8rem 2rem 8rem 2rem;
+        background-color: rgba($color: red, $alpha: 0.7);
+        margin-top: 5rem;
+    }
+    .timeAddBlock{
+        position: absolute;
+        top: 0rem;
+        padding-right: 4rem;
+        justify-content: center;
+        display: inline-block;
+        padding-top: 0rem;
+    }
+    
+    .addTime{
+        margin-left: 0rem;
+        
+    }
+    
+    .less{
+        padding-left: 0rem;
+        margin-top: 0.3rem;
+    }
+}

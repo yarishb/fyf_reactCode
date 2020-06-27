@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+.fullPage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/summer-run-begin-1575987339.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.todoImg{
+    position: absolute;
+    z-index: -1;
+}
+
+.headerTodo{
+    font-size: 60px;
+    font-family: 'Mukta', sans-serif;
+    color: rgba($color: #fff, $alpha: 1);
+}
+
+
+.todoText{
+    text-align: center;
+    background-color: rgba($color: grey, $alpha: 0.9);
+}
+
+.inputTodo{
+    transition: .5s;
+    margin-top: 2rem;
+    width: 110%;
+    height: 90%;
+    border-radius: 10px;
+    background-color: rgba($color: white, $alpha: 1);
+}
+
+.inputTodo:hover{
+    transition: .5s;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+@media screen and(max-width: "700px"){
+    .inputTodo{
+        width: 100%;
+    }   
+    .headerTodo{
+        font-size: 30px;
+        font-family: 'Mukta', sans-serif;
+        color: rgba($color: #fff, $alpha: 1);
+}
+}

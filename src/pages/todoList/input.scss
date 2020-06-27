@@ -1,0 +1,50 @@
+$black: black;
+$white: #fff;
+$primary: #11998e;
+$secondary: #38ef7d;
+$white: #fff;
+$gray: #9b9b9b;
+
+.todo{
+    width: 75%;
+}
+
+.todoButton{
+    transition: .4s;
+    border-radius: 100%;
+    border: 1px solid rgba($color: grey, $alpha: 0.3);
+    background-color: #fff;
+    color: #000;
+    padding-left:12px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    padding-right: 12px;
+    margin-top: 1.7rem;
+    margin-left: 1rem;
+    font-size: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15)}
+
+.todoButton:hover{
+    margin-top: 1.5rem;
+    border: 1px solid #fff;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: .4s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3)}
+
+
+.todoInputArea{
+    display: flex;
+}
+
+.todoInput{
+    color: rgba($color: grey, $alpha: 0.7);
+}
+
+@media screen and(max-width: "700px"){
+    .todo{
+        width: 65%;
+    }
+}

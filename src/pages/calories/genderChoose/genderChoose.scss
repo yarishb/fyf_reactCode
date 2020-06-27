@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+
+.genderFull{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.photoGender{
+    background-image: url(https://www.mfitnessnow.com/wp-content/uploads/2016/07/featured-components-fitness.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    right: 0;
+    box-shadow: 0 10px 70px rgba(0,0,0,0.7);
+}
+
+
+.genderHeader{
+    font-family: 'Mukta', sans-serif;
+    margin-left: 2rem;
+    font-size: 70px;
+}
+
+.chooseQuestionGender{
+    font-family: 'Mukta', sans-serif;
+    margin-left: 2rem;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 4.5rem;
+    top: 0;
+}
+
+.chooseButtons{
+    margin-left: 2rem;
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.femaleChoose{
+    transition: .4s;
+    border: 2px solid pink;
+    padding: 10px 40px 10px 40px;
+    margin-right: 3rem;
+    font-size: 20px;
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 500;
+}
+
+.maleChoose{
+    font-weight: 500;
+    transition: .4s;
+    border: 2px solid #a6dcef;
+    color: black;
+    padding: 10px 49px 10px 49px;
+    font-size: 20px;
+    font-family: 'Mukta', sans-serif;
+}
+
+.femaleChoose:hover{
+    transition: .4s;
+    background-color: pink;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.25);
+}
+
+.maleChoose:hover{
+    transition: .4s;
+    background-color: #a6dcef;
+    box-shadow: 1px 2px 15px rgba(0,0,0,0.25);
+}
+
+.link{
+    text-decoration: none;
+}
+
+@media screen and(max-width: "700px"){
+    .genderHeader{
+        font-size: 40px;
+    }
+    .chooseQuestionGender{
+        font-size: 20px;    
+        margin-top: 2.5rem;
+    }
+    .chooseButtons{
+        margin-left: 4rem;
+        margin-top: 7rem;
+        display: block;
+    }
+    .photoGender{
+        display: none;
+    }
+    .femaleChoose{
+        position: absolute;
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    .maleChoose{
+        margin-top: 4rem;
+        position: absolute;
+        padding-right: 4.5rem;
+        padding-left: 4.5rem;
+    }
+}

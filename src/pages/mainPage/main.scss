@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+.fullMain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(https://dslv9ilpbe7p1.cloudfront.net/eS63RLbKSLZn6vRBA66kVw_store_banner_image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+}
+
+.navBlock{
+    display: flex;
+    flex-direction: row;
+}
+.firstItem{
+    transition: .4s;
+    font-family: 'Mukta', sans-serif;
+    width: 13rem;
+
+    border-bottom-left-radius: 30px;
+    background-color: rgba($color: black, $alpha: 0.9);
+    border: 2px solid rgba($color: white, $alpha: 1);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+    left: 5rem;
+}
+
+.firstItem:hover{
+    transition: .4s;
+    color: black;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba($color: black, $alpha: 0.3);
+    .itemText{
+        transition: .4s;
+        padding-top: 3rem;
+        padding-bottom: 13rem;
+    }
+    .itemSubText{
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        max-width: 10rem;
+        padding-top: 6rem;
+    }
+}
+
+.fourthText{
+    transition: .4s;
+    font-size: 28px;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+
+.secondBlock{
+    transition: .4s;
+    font-family: 'Mukta', sans-serif;
+    width: 13rem;
+    left: 21rem;
+    background-color: rgba($color: black, $alpha: 0.9);
+    border: 2px solid rgba($color: white, $alpha: 1);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+}
+
+.fourth{
+    transition: .4s;
+    font-family: 'Mukta', sans-serif;
+    width: 13rem;
+    right: 21rem;
+    background-color: rgba($color: black, $alpha: 0.9);
+    border: 2px solid rgba($color: white, $alpha: 1);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+}
+
+.fourth:hover{
+    transition: .4s;
+    color: black;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba($color: black, $alpha: 0.3);
+    .fourthText{
+        transition: .4s;
+        padding-top: 3rem;
+        padding-bottom: 13rem;
+    }
+    .itemSubText{
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        max-width: 10rem;
+        padding-top: 6rem;
+    }
+}
+
+
+.secondBlock:hover{
+    transition: .4s;
+    color: black;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba($color: black, $alpha: 0.3);
+    .itemText{
+        transition: .4s;
+        padding-top: 3rem;
+        padding-bottom: 13rem;
+    }
+    .itemSubText{
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        max-width: 10rem;
+        padding-top: 6rem;
+    }
+}
+
+.thirdBlock{
+    transition: .4s;
+    font-family: 'Mukta', sans-serif;
+    width: 13rem;
+    right: 5rem;
+    border-bottom-right-radius: 30px;
+    background-color: rgba($color: black, $alpha: 0.9);
+    border: 2px solid rgba($color: white, $alpha: 1);
+    color: #fff;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 7rem;
+}
+
+
+.third{
+    left: 36rem;
+}
+
+
+
+.thirdBlock:hover{
+    transition: .4s;
+    color: black;
+    background-color: #fff;
+    box-shadow: 10px 10px 5px rgba($color: black, $alpha: 0.3);
+    .itemText{
+        transition: .4s;
+        padding-top: 3rem;
+        padding-bottom: 13rem;
+    }
+    .itemSubText{
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: auto;
+        max-width: 10rem;
+        padding-top: 6rem;
+    }
+}
+
+.itemText{
+    transition: .4s;
+    font-size: 30px;
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+}
+
+.itemSubText{
+    transition: .4s;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.secondNavBlock{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and(max-width: "700px"){
+    .navBlock{
+        display: none;
+        flex-direction: initial;
+    }
+}

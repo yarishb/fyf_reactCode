@@ -1,0 +1,29 @@
+.todoItem{
+    transition: .5s;
+    color:rgba($color: #000000, $alpha: 0.8);
+    font-family: sans-serif;
+    padding-bottom: 15px;
+    margin-top: 5px;
+    padding-top: 15px;
+    // border: 1px solid rgba($color: grey, $alpha: 0.5);
+    background-color: rgba($color: #000, $alpha: 0.03);
+    font-size: 24px;
+    width: 100%;
+    padding-left: 4px;
+}
+.checkbox{
+    margin-top: 8px;
+    margin-right: 20px;
+    float: right;
+}
+
+.todoItem:hover{
+    border: 0;
+    transition: .5s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.todoItemsDiv{
+    display: flex;
+    flex-direction: row;
+}
